@@ -1,26 +1,97 @@
 @import "tailwindcss";
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+@import 'swiper/css';
+@import 'swiper/css/navigation';
+@import 'swiper/css/pagination';
+@import 'swiper/css/effect-fade';
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: #181733;
+  font-family: "Dana-Regular";
 }
+
+@font-face {
+  font-family: "Dana-Regular";
+  src: url(../app/Fonts/DanaFaNum-Regular.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "Dana-Bold";
+  src: url(../app/Fonts/DanaFaNum-Bold.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "Kalameh-Medium";
+  src: url(../app/Fonts/KalamehMedium.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "Kalameh-Bold";
+  src: url(../app/Fonts/Kalameh-Bold.woff2) format("woff2");
+}
+
+@theme {
+  --font-Dana: "Dana-Regular", "sans-serif";
+  --font-Dana-Bold: "Dana-Bold", "sans-serif";
+  --font-Kalameh: "Kalameh-Medium", "sans-serif";
+  --font-Kalameh-Bold: "Kalameh-Bold", "sans-serif";
+
+}
+
+@layer utilities {
+
+  .Dana-Regular {
+    font-family: var(--font-Dana);
+  }
+
+  .Dana-Bold {
+    font-family: var(--font-Dana-Bold);
+  }
+
+  .Kalameh-Medium {
+    font-family: var(--font-Kalameh);
+  }
+
+  .Kalameh-Bold {
+    font-family: var(--font-Kalameh-Bold);
+  }
+
+}
+
+
+/* ====== Start Custom Styles For LatestVideoSlider Component ====== */
+.swiper-slide {
+  overflow: visible !important;
+}
+
+.glow-wrapper {
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.glow-wrapper::before {
+  content: "";
+  position: absolute;
+  inset: -9px;
+  border-radius: 16px;
+  background: linear-gradient(157.81deg,
+      #def9fa,
+      #bef3f5,
+      #9dedf0,
+      #7de7eb,
+      #5ce1e6,
+      #33bbcf);
+  filter: blur(2px);
+  opacity: 0;
+  z-index: 0;
+  transition: opacity 0.3s ease;
+}
+
+.glow-wrapper:hover::before {
+  opacity: 1;
+}
+/* ====== End Custom Styles For LatestVideoSlider Component ====== */
+
+
+
+
+
