@@ -11,7 +11,18 @@ import CupsSlider from '@/app/components/home/CupsSlider';
 import ArticlesSlider from '@/app/components/home/ArticlesSlider';
 import Footer from '@/app/components/home/Footer';
 
+
 export default function HomePage() {
+
+  const movie = [
+  {
+    id: "1",
+    title: "Lucifer",
+    image: "/images/image.png",
+    genres: ["Crime", "Drama"],
+    rating: 8.1,
+  },
+];
   return (
     <>
       <Navbar />

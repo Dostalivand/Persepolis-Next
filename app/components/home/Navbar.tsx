@@ -11,8 +11,8 @@ import Image from 'next/image';
 const rightItems = [
   { title: 'پخش زنده', href: '/live' },
   { title: 'صفحه اصلی', href: '/' },
-  { title: 'محتوای اختصاصی', href: '/exclusive' },
-  { title: 'سینمای خانگی', href: '/exclusive' },
+  { title: 'محتوای اختصاصی', href: '/premiumcontent' },
+  { title: 'سینمای خانگی', href: '/cinema' },
 ];
 
 const leftItems = [

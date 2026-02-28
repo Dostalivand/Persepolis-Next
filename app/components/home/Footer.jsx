@@ -8,13 +8,11 @@ import { BiLogoTelegram } from "react-icons/bi";
 const FooterLinks = [
   { title: "صفحه اصلی", link: "/#home" },
   { title: "سینمای خانگی", link: "/#about" },
-  { title: "خدمات دوره ها", link: "/#contact" },
   { title: "محتوای اختصاصی", link: "/#blog" },
 ];
 const FooterLinksAbout = [
   { title: "افتخارات", link: "/#honors" },
   { title: "بازیکنان", link: "/#players" },
-  { title: "تاریخچه باشگاه", link: "/#history" },
   { title: "تماس با ما", link: "/#support" },
 ];
 

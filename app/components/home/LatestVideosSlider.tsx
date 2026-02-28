@@ -139,7 +139,7 @@ export default function LatestVideosSlider() {
               1024: { slidesPerView: 5, spaceBetween: 13 },
               1152: { slidesPerView: 5, spaceBetween: 13 },
               1185: { slidesPerView: 6, spaceBetween: 13 },
-              1280: { slidesPerView: 8, spaceBetween: 13 },
+              1280: { slidesPerView: 6, spaceBetween: 13 },
             }}
             className="p-3!"
           >
@@ -174,7 +174,7 @@ export default function LatestVideosSlider() {
                       </div>
                       {(item.rating || item.duration) && (
                         <div className="mt-3 flex items-center justify-center md:justify-between text-gray-500 border-t border-gray-300 pt-3">
-                          <span className='flex items-center justify-center gap-0.5 text-xs md:text-sm group-hover:text-rose-600 duration-300'>مشاهده جزئیات
+                          <span className='flex items-center justify-center text-xs group-hover:text-rose-600 duration-300 text-nowrap'>مشاهده جزئیات
                             <IoIosArrowBack className='text-rose-600 text-sm md:text-base group-hover:-translate-x-1 duration-300' />
                           </span>
                           {item.rating && (
